@@ -58,11 +58,15 @@
 #include <QCloseEvent>
 #include <QFileDialog>
 #include <QDir>
+#include <QDirModel>
 #include <QProgressDialog>
 #include <QProgressBar>
 #include <QDomDocument>
 #include <QProcess>
 #include <QDockWidget>
+#include <QInputDialog>
+#include <QPrintDialog>
+#include <QMessageBox>
 
 #ifdef HAVE_FONTCONFIG
 #include <fontconfig/fontconfig.h>

@@ -25,6 +25,7 @@
 #include "fmfontdb.h"
 #include <QtGui>
 #include <QDebug>
+#include <QMenu>
 
 typotek* Systray::ttek = 0;
 
