@@ -2340,12 +2340,12 @@ QPixmap FontItem::oneLinePreviewPixmap ( QString oneline , QColor fg_color, QCol
 		}
 
 		if ( pRTL )
-			pen.rx() -= qRound ( m_glyph->linearHoriAdvance / 65536 );
+			pen.rx() -= m_glyph->linearHoriAdvance / 65536;
 
 		apainter.drawImage ( pen.x() +  m_glyph->bitmap_left , pen.y() - m_glyph->bitmap_top , glyphImage(fg_color) );
 
 		if ( !pRTL )
-			pen.rx() += qRound ( m_glyph->linearHoriAdvance / 65536 );
+			pen.rx() += m_glyph->linearHoriAdvance / 65536;
 
 	}
 	/// Check if we have drawn something
