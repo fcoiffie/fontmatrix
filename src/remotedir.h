@@ -20,7 +20,7 @@
 
 class QBuffer;
 class QByteArray;
-class QHttp;
+// class QHttp;
 
 struct FontInfo
 {
@@ -50,7 +50,7 @@ class RemoteDir : public QObject
 	private:
 		QStringList argDirs;
 		bool m_ready;
-		QList<QHttp*> https; 
+// 		QList<QHttp*> https; // TODO Replace this code
 		QList<QBuffer*> buffers;
 		QMap<int, QString> rDirs;
 		
@@ -59,7 +59,7 @@ class RemoteDir : public QObject
 		// < GET Id, buffer >
 		QMap<int, QByteArray*> httpBuffers;
 		// < GET Id, http >
-		QMap<int, QHttp*> reverseHttp;
+// 		QMap<int, QHttp*> reverseHttp; // TODO Replace this code
 		// < GET Id, path >
 		QMap<int, QString> httpPaths;
 		
