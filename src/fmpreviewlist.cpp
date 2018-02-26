@@ -31,7 +31,7 @@
 QVector<QRgb> FMPreviewIconEngine::m_selPalette;
 
 FMPreviewIconEngine::FMPreviewIconEngine()
-		:QIconEngineV2()
+		:QIconEngine()
 {
 	if(m_selPalette.isEmpty())
 	{
@@ -54,6 +54,12 @@ FMPreviewIconEngine::FMPreviewIconEngine()
 					      ((sb*sn) + (tb*tn)) /cpal );
 		}
 	}
+}
+
+QIconEngine *FMPreviewIconEngine::clone() const
+{
+	// TODO Implement this function
+	return 0;
 }
 
 QVector<QRgb> FMPreviewIconEngine::actualSelPalette(const QVector<QRgb>& orig)
